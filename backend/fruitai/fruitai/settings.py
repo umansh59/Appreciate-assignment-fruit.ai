@@ -27,7 +27,11 @@ SECRET_KEY = 'django-insecure-x%1(6-x2h)ot26om(v$vxz^61^wem_%f3c=+^1ld997hvzc9#y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'appreciate-assignment-fruit-ai.onrender.com',
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
