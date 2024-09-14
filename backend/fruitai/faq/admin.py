@@ -5,8 +5,8 @@ from django.contrib import admin
 from .models import FAQ
 
 class FAQAdmin(admin.ModelAdmin):
-    list_display = ('id','question', 'answer', 'image_name', 'image_custom_name', 'created_at')
-    fields = ('id','question', 'answer', 'image', 'image_custom_name', 'created_at')
+    list_display = ('question', 'answer', 'image_name', 'image_custom_name', 'created_at')
+    fields = ('question', 'answer', 'image', 'image_custom_name', 'created_at')
     readonly_fields = ('created_at',)
 
 admin.site.register(FAQ, FAQAdmin)
