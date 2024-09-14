@@ -1,4 +1,4 @@
 django
 djangorestframework
 Pillow
-corsheaders
+django-cors-headers
