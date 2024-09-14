@@ -1,6 +1,3 @@
-gunicorn
-whitenoise
 django
 djangorestframework
 Pillow
-django-cors-headers
