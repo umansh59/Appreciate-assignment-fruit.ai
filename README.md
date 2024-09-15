@@ -1,74 +1,97 @@
-Appreciate Assignment Fruit.ai
+Absolutely! Here's your README file with proper formatting using Markdown:
+
+## Appreciate Assignment Fruit.ai
+
 Welcome to the Appreciate Assignment Fruit.ai project! This application uses Django for the backend and ReactJS for the frontend to manage and display FAQs.
 
-Table of Contents
-Backend
-Setup
-API Endpoints
-Frontend
-Setup
-Admin Access
-Hosted Links
-Backend
-Setup
-Create a Virtual Environment: Set up a new Python 3.9 environment.
+**Table of Contents**
 
-Install Dependencies: Run the following command to install the required packages:
+* Backend
+    * Setup
+    * API Endpoints
+* Frontend
+    * Setup
+    * Admin Access
+    * Hosted Links
 
-bash
-Copy code
+## Backend
+
+### Setup
+
+1. **Create a Virtual Environment:** Set up a new Python 3.9 environment.
+
+2. **Install Dependencies:** Run the following command to install the required packages:
+
+```bash
 pip install -r requirements.txt
-Run the Backend Server: Start the backend server with:
+```
 
-bash
-Copy code
+3. **Run the Backend Server:** Start the backend server with:
+
+```bash
 python manage.py runserver
-API Endpoints
-Create/Update/Delete FAQs:
+```
 
-Endpoint: {your-base-url}/api/faqs
-Admin ID: umansh-admin
-Password: admin
-Access Specific FAQ:
+### API Endpoints
 
-Endpoint: {your-base-url}/api/faqs/{id}
-Admin ID: umansh-admin
-Password: admin
-Read All FAQs:
+**Authentication:**
 
-Endpoint: {your-base-url}/api/public/faqs
-Frontend
+* Admin ID: umansh-admin
+* Password: admin
+
+**Endpoints:**
+
+* **Create/Update/Delete FAQs:**
+    * Endpoint: `{your-base-url}/api/faqs`
+* **Access Specific FAQ:**
+    * Endpoint: `{your-base-url}/api/faqs/{id}`
+* **Read All FAQs:**
+    * Endpoint: `{your-base-url}/api/public/faqs`
+
+**Note:** Replace `{your-base-url}` with your actual deployment URL.
+
+## Frontend
+
 The frontend is built with ReactJS and is designed based on the provided Figma design.
 
-Setup
-Download Frontend Files: Clone or download the frontend files from the repository.
+### Setup
 
-Configure the .env File: Set up your .env file with the appropriate API endpoints.
+1. **Download Frontend Files:** Clone or download the frontend files from the repository.
 
-Install Dependencies: Run the following command to install the necessary packages:
+2. **Configure the .env File:** Set up your `.env` file with the appropriate API endpoints.
 
-bash
-Copy code
+3. **Install Dependencies:** Run the following command to install the necessary packages:
+
+```bash
 npm install
-Start the Frontend: Launch the frontend application with:
+```
 
-bash
-Copy code
+4. **Start the Frontend:** Launch the frontend application with:
+
+```bash
 npm start
-Admin Access
+```
+
+### Admin Access
+
 To create, update, or delete FAQs:
 
-Admin ID: umansh-admin
-Password: admin
-Hosted Links
-Replace {your-base-url} with https://appreciate-assignment-fruit-ai.onrender.com:
-https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/;
-https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/{id};
-https://appreciate-assignment-fruit-ai.onrender.com/api/public/faqs/;
+* Admin ID: umansh-admin
+* Password: admin
 
-Create/Update/Delete FAQs
-Read All FAQs
-Note: The hosted link might take some time to open as it is on a free-tier account.
+## Hosted Links
 
-Preview Frontend: https://appreciate-assignment-fruit-ai.vercel.app/
+* **API Endpoints:** Replace `{your-base-url}` with [https://appreciate-assignment-fruit-ai.onrender.com](https://appreciate-assignment-fruit-ai.onrender.com):
+    * [https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/](https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/)
+    * [https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/](https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/){id}
+    * [https://appreciate-assignment-fruit-ai.onrender.com/api/public/faqs/](https://appreciate-assignment-fruit-ai.onrender.com/api/public/faqs/)
+
+**Note:** The hosted link might take some time to open as it is on a free-tier account.
+
+## Preview Frontend
+
+* [https://appreciate-assignment-fruit-ai.vercel.app/](https://appreciate-assignment-fruit-ai.vercel.app/)
+
+
+
 
