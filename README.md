@@ -1,4 +1,3 @@
-Absolutely! Here's your README file with proper formatting using Markdown:
 
 ## Appreciate Assignment Fruit.ai
 
