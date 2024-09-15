@@ -58,8 +58,8 @@ const FAQUpdate = () => {
   const handleUpdate = async (e) => {
     e.preventDefault();
 
-    const username = prompt('Enter username:', '');
-    const password = prompt('Enter password:', '');
+    const username = prompt('Enter username: "umansh-admin"', '');
+    const password = prompt('Enter password: "admin"', '');
 
     if (!username || !password) {
       alert('Username and password are required.');

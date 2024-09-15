@@ -1,5 +1,318 @@
-.chat-container {
+
+  .chat-form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 675px;
+    width: 400px;
+    overflow-x: hidden;
+    overflow-y:scroll ;
+    margin-top: 0px;
+  }
+  .back-btn{
+    background-color: white;
+    border:none;
+    font-size:x-large;
+    margin: 10px;
+  }
+  #avatar-img{
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 30px;
+   
+  }
+  .chat-header{
     display: flex;
-    height: 100vh;
+    padding: 20px;
+    box-shadow: 0px 1px  grey;
+    height:60px;
+    border-radius: 10px;
+    position:fixed;
+    background-color: white;
+    margin-bottom: 20px;
+    z-index: 10;
+    width: 26%;
+  }
+  .chat-name{
+    color: black;
+    margin: 10px;
+  }
+  .online-status{
+    color: green;
+    position: relative;
+    right:110px;
+    top:20px;
+  }
+
+  .chat-body {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    position: relative;
+    top: 100px;
+    max-height: 490px;
+
   }
   
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .received .bubble {
+    background-color: #e6e6e6;
+    border-radius: 15px 15px 15px 0;
+    padding: 5px;
+    display: inline-block;
+    max-width: 60%;
+  }
+
+  
+  
+  .sent .bubble {
+    background-color: #007bff;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+    padding: 5px;
+    display: inline-block;
+    max-width: 60%;
+    margin-left: auto;
+    position: relative;
+    left: 170px;
+    max-height: 60px;
+  }
+  
+  .timestamp {
+    display: block;
+    font-size: 10px;
+    color: gray;
+    margin-top: 5px;
+    text-align: right;
+  }
+  
+  .recorded-bubble {
+    display: flex;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 15px 15px 0 15px;
+    width: 50%;
+    margin-left: auto;
+  }
+  
+  .play-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .recording-duration {
+    font-size: 14px;
+  }
+
+  .card-bubble {
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+    border-radius: 15px 15px 15px 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height:140px;
+    border-radius: 30px;
+  }
+  
+  .bubble {
+    display: flex;
+    align-items: center; 
+    flex-direction: column}; 
+  
+  
+  
+  .fruit-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    margin-left: 40px;
+  }
+  
+  .fruit-details h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .fruit-details p {
+    margin: 5px 0;
+    color: #555;
+  }
+  .fruit-img{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .quantity-btn {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .quantity-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .quantity {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+
+
+  .send{
+    display: flex;
+    position: absolute;
+    bottom:20px;
+    width: 400px
+
+  }
+  .send-btn {
+    height: 40px;
+    width: 10%;
+    border-radius: 5px;
+    background-color: rgb(141, 223, 58);
+
+  }
+#sound{
+  z-index :20;
+  height: 60px;
+  width: 100px;
+  position: relative;
+  left :40px;
+  top:-60px
+
+}
+  #send-btn-icon{
+    position: relative;
+    left:-5px;
+    color:black;
+    font-size: 20px;
+    bottom: 30px;
+
+  }
+  .type-msg{
+    width:75%;
+    border-radius:15px;
+    padding:5px;
+    padding-left: 30px;
+    margin: 0px 10px;
+  }
+  #pp-clip{
+    position: relative;
+    top:530px;
+    z-index: 10;
+    left: 20px;
+  }
+
+  
+ /* Define dark mode colors */
+:root {
+  --background-light: white;
+  --background-dark: #2c2c2c;
+  --text-light: black;
+  --text-dark: white;
+  --bubble-received-light: #e6e6e6;
+  --bubble-received-dark: #3c3c3c;
+  --bubble-sent-light: #007bff;
+  --bubble-sent-dark: #0056b3;
+}
+
+/* Default light mode styles */
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.chat-form {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.chat-header {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.bubble.received {
+  background-color: var(--bubble-received-light);
+}
+
+.bubble.sent {
+  background-color: var(--bubble-sent-light);
+}
+
+.bubble.recorded-bubble {
+  background-color: var(--bubble-sent-light);
+}
+
+/* Dark mode styles */
+.dark-mode body {
+  background-color: var(--background-dark);
+}
+.dark-mode .back-btn{
+  background-color: var(--background-dark);
+  color: white;
+
+}
+.dark-mode .chat-form {
+  background-color: var(--background-dark);
+}
+
+.dark-mode .chat-header {
+  background-color: var(--background-dark);
+  color: white;
+}
+.dark-mode .chat-header h2{
+  background-color: var(--background-dark);
+  color: white;
+}
+
+
+.dark-mode .bubble.received {
+  background-color: var(--bubble-received-dark);
+}
+
+.dark-mode .bubble.sent {
+  background-color: var(--bubble-sent-dark);
+  
+}
+
+.dark-mode .bubble.recorded-bubble {
+  background-color: var(--bubble-sent-dark);
+  color: var(--text-light); 
+}
+
+.toggle-dark-mode {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.recieved{
+  color:black
+}
