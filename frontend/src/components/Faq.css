@@ -30,7 +30,7 @@ li{
     flex-wrap: wrap;
     height:170px;
     margin-bottom:20px;
-    max-height:fit-content;
+    max-height:600px;
 
    
 
@@ -54,6 +54,8 @@ li{
     left: 125px;
     color: azure;
     font-size: 15px;
+    height: 70px;
+    overflow-y: scroll;
 
 }
 
