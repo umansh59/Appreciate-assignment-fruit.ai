@@ -62,6 +62,9 @@ Admin ID: umansh-admin
 Password: admin
 Hosted Links
 Replace {your-base-url} with https://appreciate-assignment-fruit-ai.onrender.com:
+https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/;
+https://appreciate-assignment-fruit-ai.onrender.com/api/faqs/{id};
+https://appreciate-assignment-fruit-ai.onrender.com/api/public/faqs/;
 
 Create/Update/Delete FAQs
 Read All FAQs
