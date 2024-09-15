@@ -3,6 +3,9 @@
 
 Welcome to the Appreciate Assignment Fruit.ai project! This application uses Django for the backend and ReactJS for the frontend to manage and display FAQs.
 
+##deployment link
+* [https://appreciate-assignment-fruit-ai.vercel.app/](https://appreciate-assignment-fruit-ai.vercel.app/)
+
 **Table of Contents**
 
 * Backend
