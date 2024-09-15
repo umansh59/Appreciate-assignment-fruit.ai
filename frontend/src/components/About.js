@@ -6,7 +6,7 @@ export default function About() {
 
       <div className='app-form'>
        <div className='about'> <h1>Fruit.AI</h1>
-        <p>Fruiti.AI is a health and wellness app designed to educate and motivate users to include more fruits in their daily diet. With engaging content, fun facts, and personalized fruit recommendations, Fruitify brings the incredible benefits of fruits to your fingertips.</p>
+        <p>Fruit.AI is a health and wellness app designed to educate and motivate users to include more fruits in their daily diet. With engaging content, fun facts, and personalized fruit recommendations, Fruitify brings the incredible benefits of fruits to your fingertips.</p>
         <div className='about-logo'>ABOUT US</div></div>
       </div>
     </div>
