@@ -68,7 +68,7 @@ const Login = () => {
           <FontAwesomeIcon icon={faUser} className="input-icon" />
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Username type in any name"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             className="login-input"
@@ -79,7 +79,7 @@ const Login = () => {
           <FontAwesomeIcon icon={faLock} className="input-icon" />
           <input
             type={showPassword ? 'text' : 'password'}
-            placeholder="Password"
+            placeholder="Password type in anything"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="login-input password-field"
