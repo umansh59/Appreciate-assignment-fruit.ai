@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     'appreciate-assignment-fruit-ai.onrender.com',
     'localhost',
     '127.0.0.1',
+    'http://localhost:3000/'
 ]
 
 

@@ -1,0 +1,42 @@
+.trans-box{
+    border-radius: 20px;
+    background-color: rgb(170, 237, 162);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 80%;
+    box-shadow: 2px 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.head3{
+    margin-top: 30px;
+}
+
+.sel{
+    background-color: burlywood;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    margin: 20px;
+    padding-left: 20px;
+    overflow: hidden;
+}
+
+
+
+
+.trans-button{
+    background-color: rgb(235, 78, 78);
+    color: white;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 40px;
+}
+.trans-head{
+    color:white
+}
